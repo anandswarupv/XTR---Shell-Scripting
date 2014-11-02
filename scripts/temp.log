@@ -1,0 +1,22 @@
+total 76
+-rwxrwxr-x. 1 anand anand  177 Feb 24 10:46 firstScript1.sh
+-rwxrwxr-x. 1 anand anand   56 Mar  4 20:01 progress.sh
+-rw-rw-r--. 1 anand anand   31 Mar  9 16:25 file2.txt
+-rw-rw-r--. 1 anand anand  188 Mar  9 16:27 scorecard.txt
+-rw-rw-r--. 1 anand anand   48 Apr  4 06:29 months.txt
+-rw-rw-r--. 1 anand anand  158 Apr  4 06:37 file1.txt
+-rw-rw-r--. 1 anand anand  233 Apr  7 15:24 demo_file.txt
+-rwxrwxr-x. 1 anand anand   79 Apr 14 16:04 hello_script.sh
+-rwxrwxr-x. 1 anand anand  229 Jun 26 08:14 myFirstFunction.sh
+-rwxrwxr-x. 1 anand anand  470 Jun 26 08:17 arrays.sh
+-rwxrwxr-x. 1 anand anand  512 Jun 26 08:20 rotate_line.sh
+-rwxrwxr-x. 1 anand anand  378 Jun 26 08:21 use_rotate_line.sh
+-rwxrwxrwx. 1 anand anand  382 Jun 26 08:22 jobs.sh
+-rwxrwxr-x. 1 anand anand  269 Jun 26 08:28 greetings.sh
+-rwxrwxr-x. 1 anand anand  896 Jun 26 09:22 functionWithReturn.sh
+-rw-rw-r--. 1 anand anand    0 Jul  1 09:58 temp.file
+-rw-rw-r--. 1 anand anand   93 Jul  1 10:03 dummyFile
+-rwxrwxr-x. 1 anand anand  153 Jul  1 15:37 firstScript.sh
+drwxrwxr-x. 2 anand anand 4096 Jul  1 17:54 tempDir
+-rw-rw-r--. 1 anand anand   66 Jul  1 18:00 temp.sh
+-rw-rw-r--. 1 anand anand    0 Jul  1 18:41 temp.log

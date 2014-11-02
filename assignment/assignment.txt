@@ -1,0 +1,151 @@
+shell scripting assignments - self learning
+If you are learning UNIX shell scripting and would like to do some hands-on assignments, here are a few.
+
+
+Exercise 1. In a shell script, accept command line arguments.  Display all the arguments and also the number of arguments.
+
+Expected output:
+
+$ ./ex_01.bash this that
+arguments: this that
+Number of arguments: 2
+$
+
+
+Exercise 2. Accept a filename as command line argument. Display all lines of that file which contain the exact word "on" (on should match, whereas one, cron, and stone should not match)
+
+$ ./ex_02.bash ringfile.txt
+One for the Dark Lord on his dark throne
+$
+
+
+Exercise 3. Write a shell script to list users who have bash as their default shell, and also the total count.
+
+$ ./ex_03.bash
+root
+ysawant
+dsawant
+total 3
+$
+
+
+Exercise 4. Accept command line arguments. Consider all command line arguments as user names and for all the given user names, display if they are logged in or not.
+
+Expected output:
+
+$ ./ex_04.bash dsawant ysawant roo root
+dsawant is not logged in
+ysawant is logged in
+roo is not logged in
+root is logged in
+$
+
+
+Exercise 5. Write a subroutine that simulates the roll of a dice.  That is, it generates a random number between 1 and 6 and returns the number.
+
+Expected output:
+num=throw_dice()
+echo $num
+
+
+Exercise 6. Write a function that accepts a filename as its argument and displays whether:
+(a) file exists or not
+(b) file is readable or not
+(c) file is writeable or not
+(d) is a plain file
+(e) is a directory
+
+1. check_file("/foo/bar")
+Expected output:
+$ ./ex_06.bash
+/foo/bar does not exist
+$
+
+2. check_file("/etc/shadow")
+Expected output:
+$ ./ex_06.bash
+/etc/shadow exists
+$
+
+3. check_file("/etc/passwd")
+Expected output:
+$ ./ex_06.bash
+/etc/passwd exists
+/etc/passwd is readable
+/etc/passwd is a plain file
+$
+
+4. check_file("/home/yogeshs/pcdb_ss.txt")
+Expected output:
+$ ./ex_06.bash
+/home/yogeshs/pcdb_ss.txt exists
+/home/yogeshs/pcdb_ss.txt is readable
+/home/yogeshs/pcdb_ss.txt is writeable
+/home/yogeshs/pcdb_ss.txt is a plain file
+$
+
+5. check_file("/home/yogeshs/")
+Expected output:
+$ ./ex_06.bash
+/home/yogeshs exists
+/home/yogeshs is readable
+/home/yogeshs is writeable
+/home/yogeshs is a directory
+$
+
+
+Exercise 6.1. Modify the above subroutine to accept more than one arguments.  For all the arguments given, run the file tests mentioned above.
+
+
+Exercise 7. Accept a directory path as command line argument. In the given directory, find the file having oldest modification time.  Display the file name along with how many days ago it was modified.
+
+Expected output:
+$ ./ex_07.bash /foo/
+/foo/ does not exist
+$
+
+$ ./ex_07.bash /etc/passwd
+/etc/passwd is not a directory
+$
+
+$ ./ex_07.bash /etc/
+motd was modified 167 days ago
+$
+
+
+Exercise 8. Use getopts to accept command line arguments as described below.
+
+(a) -s, --say
+(b) -r, --repeat
+(c) --help
+
+Expected output:
+$ ./repeater.bash
+Nothing to repeat.
+$
+
+$ ./repeater.bash  --say 'Mortals have not been our study. We have other business.'  -r 5
+Mortals have not been our study. We have other business.
+Mortals have not been our study. We have other business.
+Mortals have not been our study. We have other business.
+Mortals have not been our study. We have other business.
+Mortals have not been our study. We have other business.
+$
+
+$ ./repeater.bash  -s 'The might of Elrond is in wisdom not in weapons.'
+The might of Elrond is in wisdom not in weapons.
+$
+
+$ ./repeater.bash  --repeat 10
+Nothing to repeat.
+$
+
+$ ./repeater.bash  --help
+Usage: repeater.bash
+Repeat the given words.
+
+Mandatory arguments to long options are mandatory for short options as well.
+  -s, --say      what to repeat
+  -r, --repeat   repeat how many times
+      --help     display this help and exit
+$
